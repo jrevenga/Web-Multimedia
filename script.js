@@ -25,32 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
     h2Elements.forEach(h2 => {
         h2.addEventListener('click', function () {
             const ul = this.nextElementSibling;
-            if (ul.style.display === 'none') {
-                ul.style.display = 'block';
-            } else {
-                ul.style.display = 'none';
-            }
+            ul.classList.toggle('visible');
         });
-    });
-
-    // Inicializar ScrollReveal
-    const sr = ScrollReveal({
-        duration: 1000,
-        easing: 'ease',
-        mobile: false,
-    });
-
-    // Animación para el encabezado
-    sr.reveal('header', {
-        origin: 'top',
-        distance: '50px',
-    });
-
-    // Animación para las secciones
-    sr.reveal('section', {
-        origin: 'bottom',
-        distance: '50px',
-        interval: 200,
     });
 
     // Desplazamiento suave al hacer clic en los enlaces del índice
@@ -66,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 top: targetElement.offsetTop - header.offsetHeight,
                 behavior: 'smooth'
             });
+
         });
     });
 });
