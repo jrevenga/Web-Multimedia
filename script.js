@@ -33,26 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Inicializar ScrollReveal
-    const sr = ScrollReveal({
-        duration: 1000,
-        easing: 'ease',
-        mobile: false,
-    });
-
-    // Animación para el encabezado
-    sr.reveal('header', {
-        origin: 'top',
-        distance: '50px',
-    });
-
-    // Animación para las secciones
-    sr.reveal('section', {
-        origin: 'bottom',
-        distance: '50px',
-        interval: 200,
-    });
-
     // Desplazamiento suave al hacer clic en los enlaces del índice
     const links = document.querySelectorAll('#indice a');
     links.forEach(link => {
