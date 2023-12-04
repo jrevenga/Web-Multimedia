@@ -38,11 +38,6 @@ header h1 {
     overflow: hidden;
 }
 
-#contentWrapper {
-    position: relative;
-    display: flex;
-}
-
 #indice {
     position: fixed;
     width: 300px;
