@@ -221,6 +221,12 @@ iframe {
     display: block !important;
 }
 
+.centered-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Animaciones */
 @keyframes fadeIn {
     from {
