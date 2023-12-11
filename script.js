@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     h2Elements.forEach(h2 => {
         h2.addEventListener('click', function () {
             const ul = this.nextElementSibling;
-            ul.classList.toggle('visible');
+            if (ul.style.display === 'none') {
+                ul.style.display = 'block';
+            } else {
+                ul.style.display = 'none';
+            }
         });
     });
 
@@ -42,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 top: targetElement.offsetTop - header.offsetHeight,
                 behavior: 'smooth'
             });
-
         });
     });
 });

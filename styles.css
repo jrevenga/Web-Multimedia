@@ -131,8 +131,6 @@ header h1 {
 #indice.oculto + #contenido {
     margin-left: 20px;
     width: calc(100% - 20px);
-    transition: margin-left 0.3s ease, width 0.3s ease;
-    animation: slideOut 0.5s ease;
 }
 
 #indice.oculto {
